@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
   def post_summary
-end
+    self.title + " - " + self.description
+  end
 end
